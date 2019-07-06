@@ -1,0 +1,566 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0003_ts_nominal_place'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Geographic Integration Methods
+    - Source Data
+    - Citation and Use
+ 
+Detailed notes on time series design and comparability are available at: 
+    https://www.nhgis.org/sites/www.nhgis.org/files/nhgis_time_series_tables.pdf 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Time series layout:     Time varies by column
+Geographic level:       Place (by State)
+Geographic integration: Nominal
+Measurement times:      1970, 1980, 1990, 2000, 2010, 2008-2012
+ 
+Tables:
+ 
+1. Total Population
+   Years: 1970, 1980, 1990, 2000, 2010, 2008-2012
+   Code:  AV0
+ 
+2. Persons by Nativity [2]
+   Years: 1970, 1980, 1990, 2000, 2008-2012
+   Code:  AT5
+ 
+3. Persons 18 Years and Over by Educational Attainment [3]
+   Years: 1980, 1990, 2000, 2008-2012
+   Code:  B86
+ 
+4. Median Household Income in Previous Year
+   Years: 1980, 1990, 2000, 2008-2012
+   Code:  B79
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        NHGISCODE:   NHGIS Integrated Geographic Unit Code
+        GJOIN1970:   GIS Join Match Code, 1970
+        GJOIN1980:   GIS Join Match Code, 1980
+        GJOIN1990:   GIS Join Match Code, 1990
+        GJOIN2000:   GIS Join Match Code, 2000
+        GJOIN2010:   GIS Join Match Code, 2010
+        GJOIN2012:   GIS Join Match Code, 2012
+        STATE:       NHGIS Integrated State Name
+        STATEFP:     FIPS State Code
+        STATENH:     NHGIS Integrated State Code
+        PLACE:       NHGIS Integrated Place Name
+        PLACEA:      NHGIS Integrated Place Code
+        NAME1970:    Area Name, 1970
+        NAME1980:    Area Name, 1980
+        NAME1990:    Area Name, 1990
+        NAME2000:    Area Name, 2000
+        NAME2010:    Area Name, 2010
+        NAME2012:    Area Name, 2012
+ 
+Table 1: (AV0) Total Population
+    Time series AA: Persons: Total
+        AV0AA1970:   1970: Persons: Total
+        AV0AA1980:   1980: Persons: Total
+        AV0AA1990:   1990: Persons: Total
+        AV0AA2000:   2000: Persons: Total
+        AV0AA2010:   2010: Persons: Total
+        AV0AA125:    2008-2012: Persons: Total
+        AV0AA125M:   Margin of error: 2008-2012: Persons: Total
+ 
+Table 2: (AT5) Persons by Nativity [2]
+    Time series AA: Persons: Native
+        AT5AA1970:   1970: Persons: Native
+        AT5AA1980:   1980: Persons: Native
+        AT5AA1990:   1990: Persons: Native
+        AT5AA2000:   2000: Persons: Native
+        AT5AA125:    2008-2012: Persons: Native
+        AT5AA125M:   Margin of error: 2008-2012: Persons: Native
+    Time series AB: Persons: Foreign born
+        AT5AB1970:   1970: Persons: Foreign born
+        AT5AB1980:   1980: Persons: Foreign born
+        AT5AB1990:   1990: Persons: Foreign born
+        AT5AB2000:   2000: Persons: Foreign born
+        AT5AB125:    2008-2012: Persons: Foreign born
+        AT5AB125M:   Margin of error: 2008-2012: Persons: Foreign born
+ 
+Table 3: (B86) Persons 18 Years and Over by Educational Attainment [3]
+    Time series AA: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        B86AA1980:   1980: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        B86AA1990:   1990: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        B86AA2000:   2000: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        B86AA125:    2008-2012: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        B86AA125M:   Margin of error: 2008-2012: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+    Time series AB: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        B86AB1980:   1980: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        B86AB1990:   1990: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        B86AB2000:   2000: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        B86AB125:    2008-2012: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        B86AB125M:   Margin of error: 2008-2012: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+    Time series AC: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        B86AC1980:   1980: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        B86AC1990:   1990: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        B86AC2000:   2000: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        B86AC125:    2008-2012: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        B86AC125M:   Margin of error: 2008-2012: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+ 
+Table 4: (B79) Median Household Income in Previous Year
+    Time series AA: Median income in previous year: Households
+        B79AA1980:   1980: Median income in previous year: Households
+        B79AA1990:   1990: Median income in previous year: Households
+        B79AA2000:   2000: Median income in previous year: Households
+        B79AA125:    2008-2012: Median income in previous year: Households
+        B79AA125M:   Margin of error: 2008-2012: Median income in previous year: Households
+ 
+--------------------------------------------------------------------------------
+Geographic Integration Methods
+--------------------------------------------------------------------------------
+ 
+Nominal Integration:
+
+    Nominally integrated tables link geographic units across time according to
+    their names and codes, disregarding any changes in unit boundaries. The
+    identified geographic units match those from each census source, so the
+    spatial definitions and total number of units may vary from one time to
+    another (e.g., a city may annex land, a tract may be split in two, a new
+    county may be created, etc.). The tables include data for a particular
+    geographic unit only at times when the unit's name or code was in use,
+    resulting in truncated time series for some areas.
+    
+    Users should be cautious when interpreting changes in nominally integrated
+    time series because a single unit code may refer to distinctly different
+    areas at different times. If you are uncertain whether any boundaries
+    changed in your areas of interest, we recommend inspecting NHGIS GIS files
+    to confirm. (NHGIS supplies GIS boundary files for all units and years in
+    nominally integrated time series *except* 1970 places and county
+    subdivisions.)
+    
+    Alternatively, for some topics and time periods, NHGIS provides
+    "geographically standardized" time series, which provide data from multiple
+    times for a single census's geographic units (e.g., 2000 and 2010 data for
+    2010 census units). A disadvantage of standardized time series is that, in
+    areas where source units do not nest perfectly within a unit of the standard
+    year (e.g., where a source 2000 unit intersects multiple 2010 units), NHGIS
+    applies interpolation to standardize the data, a process which may
+    occasionally produce substantial errors.
+
+Complete documentation on time series integration methods is available at:
+    https://www.nhgis.org/documentation/time-series
+ 
+--------------------------------------------------------------------------------
+Source Data
+--------------------------------------------------------------------------------
+ 
+Additional documentation on NHGIS data sources is available at:
+    https://www.nhgis.org/documentation/tabular-data
+
+Table 1: (AV0) Total Population
+ 
+    Time series AA: Persons: Total
+        Year: 1970
+            Source dataset: 1970 Census: Count 4Pa - Sample-Based Population Data
+                Source table: NT126. 100% Population
+                    Universe: Persons
+                        Variable: [C1I001] Total
+        Year: 1980
+            Source dataset: 1980 Census: STF 1 - 100% Data
+                Source table: NT1A. Persons
+                    Universe: Persons
+                        Variable: [C7L001] Total
+        Year: 1990
+            Source dataset: 1990 Census: STF 1 - 100% Data
+                Source table: NP1. Persons
+                    Universe: Persons
+                        Variable: [ET1001] Total
+        Year: 2000
+            Source dataset: 2000 Census: SF 1a - 100% Data [Areas Larger Than Block Groups]
+                Source table: NP001A. Total Population
+                    Universe: Persons
+                        Variable: [FL5001] Total
+        Year: 2010
+            Source dataset: 2010 Census: SF 1a - P & H Tables [Blocks & Larger Areas]
+                Source table: P1. Total Population
+                    Universe: Total population
+                        Variable: [H7V001] Total
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Block Groups & Larger Areas]
+                Source table: B01003. Total Population
+                    Universe: Total population
+                        Variable: [QSP001] Total
+ 
+ 
+Table 2: (AT5) Persons by Nativity [2]
+ 
+    Time series AA: Persons: Native
+        Year: 1970
+            Source dataset: 1970 Census: Count 4Pb - Sample-Based Population Data with Race/Ethnicity Breakdown
+                Source table: NT23. Nativity by Mother Tongue
+                    Universe: Persons
+                        Variable: [C10001] Native >> English
+                        Variable: [C10002] Native >> French
+                        Variable: [C10003] Native >> Swedish
+                        Variable: [C10004] Native >> German
+                        Variable: [C10005] Native >> Polish
+                        Variable: [C10006] Native >> Russian
+                        Variable: [C10007] Native >> Hungarian
+                        Variable: [C10008] Native >> Yiddish
+                        Variable: [C10009] Native >> Italian
+                        Variable: [C10010] Native >> Spanish
+                        Variable: [C10011] Native >> Portuguese
+                        Variable: [C10012] Native >> All other
+                        Variable: [C10013] Native >> Not reported
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT33. Nativity and Place of Birth
+                    Universe: Persons
+                        Variable: [DG6001] Native: Born in state of residence
+                        Variable: [DG6002] Native: Born in different state
+                        Variable: [DG6003] Native: Born abroad, at sea, etc.
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP42. Place of Birth
+                    Universe: Persons
+                        Variable: [E3N001] Native (001-099): Born in State of residence
+                        Variable: [E3N002] Native (001-099): Born in other State in the United States (001-059): Northeast (009, 023, 025, 033-034, 036, 042-044, 050)
+                        Variable: [E3N003] Native (001-099): Born in other State in the United States (001-059): Midwest (017-020, 026-027, 029, 031, 038-039, 046, 055)
+                        Variable: [E3N004] Native (001-099): Born in other State in the United States (001-059): South (001, 005, 010-014, 021-022, 024, 028, 037, 040, 045, 047-048, 051-052, 054)
+                        Variable: [E3N005] Native (001-099): Born in other State in the United States (001-059): West (002-004, 006-008, 015-016, 030, 032, 035, 041, 049, 053, 056-059)
+                        Variable: [E3N006] Native (001-099): Born outside the United States (060-099): Puerto Rico (072-075)
+                        Variable: [E3N007] Native (001-099): Born outside the United States (060-099): U.S. outlying area (060-071, 076-099)
+                        Variable: [E3N008] Native (001-099): Born outside the United States (060-099): Born abroad of American parent(s)
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NP021A. Nativity
+                    Universe: Persons
+                        Variable: [GI8001] Native
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Tracts & Larger Areas]
+                Source table: B05012. Nativity in the United States
+                    Universe: Total population in the United States
+                        Variable: [Q3J002] Native
+ 
+    Time series AB: Persons: Foreign born
+        Year: 1970
+            Source dataset: 1970 Census: Count 4Pb - Sample-Based Population Data with Race/Ethnicity Breakdown
+                Source table: NT23. Nativity by Mother Tongue
+                    Universe: Persons
+                        Variable: [C10014] Foreign born >> English
+                        Variable: [C10015] Foreign born >> French
+                        Variable: [C10016] Foreign born >> Swedish
+                        Variable: [C10017] Foreign born >> German
+                        Variable: [C10018] Foreign born >> Polish
+                        Variable: [C10019] Foreign born >> Russian
+                        Variable: [C10020] Foreign born >> Hungarian
+                        Variable: [C10021] Foreign born >> Yiddish
+                        Variable: [C10022] Foreign born >> Italian
+                        Variable: [C10023] Foreign born >> Spanish
+                        Variable: [C10024] Foreign born >> Portuguese
+                        Variable: [C10025] Foreign born >> All other
+                        Variable: [C10026] Foreign born >> Not reported
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT33. Nativity and Place of Birth
+                    Universe: Persons
+                        Variable: [DG6004] Foreign born
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP42. Place of Birth
+                    Universe: Persons
+                        Variable: [E3N009] Foreign born (100-999)
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NP021A. Nativity
+                    Universe: Persons
+                        Variable: [GI8002] Foreign born
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Tracts & Larger Areas]
+                Source table: B05012. Nativity in the United States
+                    Universe: Total population in the United States
+                        Variable: [Q3J003] Foreign-Born
+ 
+ 
+Table 3: (B86) Persons 18 Years and Over by Educational Attainment [3]
+ 
+    Time series AA: Persons: 18 years and over ~ Less than 4 years of college (in 1980) or less than bachelor's degree (since 1990)
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT50. Years of School Completed
+                    Universe: Persons 18 Years and Over
+                        Variable: [DHS001] Elementary (0-8 years) through high school (1-3 years)
+                        Variable: [DHS002] High school, 4 years
+                        Variable: [DHS003] College: 1-3 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP60. Educational Attainment
+                    Universe: Persons 18 years and over
+                        Variable: [E37001] Less than 9th grade
+                        Variable: [E37002] 9th to 12th grade, no diploma
+                        Variable: [E37003] High school graduate (includes equivalency)
+                        Variable: [E37004] Some college, no degree
+                        Variable: [E37005] Associate degree
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NPCT025B. Population 18 Years and Over by Sex by Age Groups by Educational Attainment
+                    Universe: Persons 18 Years and Over
+                        Variable: [GW5001] Male >> 18 to 24 years >> Less than 9th grade
+                        Variable: [GW5002] Male >> 18 to 24 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5003] Male >> 18 to 24 years >> High school graduate (includes equivalency)
+                        Variable: [GW5004] Male >> 18 to 24 years >> Some college, no degree
+                        Variable: [GW5005] Male >> 18 to 24 years >> Associate degree
+                        Variable: [GW5008] Male >> 25 to 34 years >> Less than 9th grade
+                        Variable: [GW5009] Male >> 25 to 34 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5010] Male >> 25 to 34 years >> High school graduate (includes equivalency)
+                        Variable: [GW5011] Male >> 25 to 34 years >> Some college, no degree
+                        Variable: [GW5012] Male >> 25 to 34 years >> Associate degree
+                        Variable: [GW5015] Male >> 35 to 44 years >> Less than 9th grade
+                        Variable: [GW5016] Male >> 35 to 44 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5017] Male >> 35 to 44 years >> High school graduate (includes equivalency)
+                        Variable: [GW5018] Male >> 35 to 44 years >> Some college, no degree
+                        Variable: [GW5019] Male >> 35 to 44 years >> Associate degree
+                        Variable: [GW5022] Male >> 45 to 64 years >> Less than 9th grade
+                        Variable: [GW5023] Male >> 45 to 64 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5024] Male >> 45 to 64 years >> High school graduate (includes equivalency)
+                        Variable: [GW5025] Male >> 45 to 64 years >> Some college, no degree
+                        Variable: [GW5026] Male >> 45 to 64 years >> Associate degree
+                        Variable: [GW5029] Male >> 65 years and over >> Less than 9th grade
+                        Variable: [GW5030] Male >> 65 years and over >> 9th to 12th grade, no diploma
+                        Variable: [GW5031] Male >> 65 years and over >> High school graduate (includes equivalency)
+                        Variable: [GW5032] Male >> 65 years and over >> Some college, no degree
+                        Variable: [GW5033] Male >> 65 years and over >> Associate degree
+                        Variable: [GW5036] Female >> 18 to 24 years >> Less than 9th grade
+                        Variable: [GW5037] Female >> 18 to 24 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5038] Female >> 18 to 24 years >> High school graduate (includes equivalency)
+                        Variable: [GW5039] Female >> 18 to 24 years >> Some college, no degree
+                        Variable: [GW5040] Female >> 18 to 24 years >> Associate degree
+                        Variable: [GW5043] Female >> 25 to 34 years >> Less than 9th grade
+                        Variable: [GW5044] Female >> 25 to 34 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5045] Female >> 25 to 34 years >> High school graduate (includes equivalency)
+                        Variable: [GW5046] Female >> 25 to 34 years >> Some college, no degree
+                        Variable: [GW5047] Female >> 25 to 34 years >> Associate degree
+                        Variable: [GW5050] Female >> 35 to 44 years >> Less than 9th grade
+                        Variable: [GW5051] Female >> 35 to 44 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5052] Female >> 35 to 44 years >> High school graduate (includes equivalency)
+                        Variable: [GW5053] Female >> 35 to 44 years >> Some college, no degree
+                        Variable: [GW5054] Female >> 35 to 44 years >> Associate degree
+                        Variable: [GW5057] Female >> 45 to 64 years >> Less than 9th grade
+                        Variable: [GW5058] Female >> 45 to 64 years >> 9th to 12th grade, no diploma
+                        Variable: [GW5059] Female >> 45 to 64 years >> High school graduate (includes equivalency)
+                        Variable: [GW5060] Female >> 45 to 64 years >> Some college, no degree
+                        Variable: [GW5061] Female >> 45 to 64 years >> Associate degree
+                        Variable: [GW5064] Female >> 65 years and over >> Less than 9th grade
+                        Variable: [GW5065] Female >> 65 years and over >> 9th to 12th grade, no diploma
+                        Variable: [GW5066] Female >> 65 years and over >> High school graduate (includes equivalency)
+                        Variable: [GW5067] Female >> 65 years and over >> Some college, no degree
+                        Variable: [GW5068] Female >> 65 years and over >> Associate degree
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Tracts & Larger Areas]
+                Source table: B15001. Sex by Age by Educational Attainment for the Population 18 Years and Over
+                    Universe: Population 18 years and over
+                        Variable: [Q8Z004] Male: 18 to 24 years: Less than 9th grade
+                        Variable: [Q8Z005] Male: 18 to 24 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z006] Male: 18 to 24 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z007] Male: 18 to 24 years: Some college, no degree
+                        Variable: [Q8Z008] Male: 18 to 24 years: Associate's degree
+                        Variable: [Q8Z012] Male: 25 to 34 years: Less than 9th grade
+                        Variable: [Q8Z013] Male: 25 to 34 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z014] Male: 25 to 34 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z015] Male: 25 to 34 years: Some college, no degree
+                        Variable: [Q8Z016] Male: 25 to 34 years: Associate's degree
+                        Variable: [Q8Z020] Male: 35 to 44 years: Less than 9th grade
+                        Variable: [Q8Z021] Male: 35 to 44 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z022] Male: 35 to 44 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z023] Male: 35 to 44 years: Some college, no degree
+                        Variable: [Q8Z024] Male: 35 to 44 years: Associate's degree
+                        Variable: [Q8Z028] Male: 45 to 64 years: Less than 9th grade
+                        Variable: [Q8Z029] Male: 45 to 64 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z030] Male: 45 to 64 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z031] Male: 45 to 64 years: Some college, no degree
+                        Variable: [Q8Z032] Male: 45 to 64 years: Associate's degree
+                        Variable: [Q8Z036] Male: 65 years and over: Less than 9th grade
+                        Variable: [Q8Z037] Male: 65 years and over: 9th to 12th grade, no diploma
+                        Variable: [Q8Z038] Male: 65 years and over: High school graduate, GED, or alternative
+                        Variable: [Q8Z039] Male: 65 years and over: Some college, no degree
+                        Variable: [Q8Z040] Male: 65 years and over: Associate's degree
+                        Variable: [Q8Z045] Female: 18 to 24 years: Less than 9th grade
+                        Variable: [Q8Z046] Female: 18 to 24 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z047] Female: 18 to 24 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z048] Female: 18 to 24 years: Some college, no degree
+                        Variable: [Q8Z049] Female: 18 to 24 years: Associate's degree
+                        Variable: [Q8Z053] Female: 25 to 34 years: Less than 9th grade
+                        Variable: [Q8Z054] Female: 25 to 34 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z055] Female: 25 to 34 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z056] Female: 25 to 34 years: Some college, no degree
+                        Variable: [Q8Z057] Female: 25 to 34 years: Associate's degree
+                        Variable: [Q8Z061] Female: 35 to 44 years: Less than 9th grade
+                        Variable: [Q8Z062] Female: 35 to 44 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z063] Female: 35 to 44 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z064] Female: 35 to 44 years: Some college, no degree
+                        Variable: [Q8Z065] Female: 35 to 44 years: Associate's degree
+                        Variable: [Q8Z069] Female: 45 to 64 years: Less than 9th grade
+                        Variable: [Q8Z070] Female: 45 to 64 years: 9th to 12th grade, no diploma
+                        Variable: [Q8Z071] Female: 45 to 64 years: High school graduate, GED, or alternative
+                        Variable: [Q8Z072] Female: 45 to 64 years: Some college, no degree
+                        Variable: [Q8Z073] Female: 45 to 64 years: Associate's degree
+                        Variable: [Q8Z077] Female: 65 years and over: Less than 9th grade
+                        Variable: [Q8Z078] Female: 65 years and over: 9th to 12th grade, no diploma
+                        Variable: [Q8Z079] Female: 65 years and over: High school graduate, GED, or alternative
+                        Variable: [Q8Z080] Female: 65 years and over: Some college, no degree
+                        Variable: [Q8Z081] Female: 65 years and over: Associate's degree
+ 
+    Time series AB: Persons: 18 years and over ~ 4 years of college (in 1980) or bachelor's degree (since 1990)
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT50. Years of School Completed
+                    Universe: Persons 18 Years and Over
+                        Variable: [DHS004] College: 4 years
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP60. Educational Attainment
+                    Universe: Persons 18 years and over
+                        Variable: [E37006] Bachelor's degree
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NPCT025B. Population 18 Years and Over by Sex by Age Groups by Educational Attainment
+                    Universe: Persons 18 Years and Over
+                        Variable: [GW5006] Male >> 18 to 24 years >> Bachelor's degree
+                        Variable: [GW5013] Male >> 25 to 34 years >> Bachelor's degree
+                        Variable: [GW5020] Male >> 35 to 44 years >> Bachelor's degree
+                        Variable: [GW5027] Male >> 45 to 64 years >> Bachelor's degree
+                        Variable: [GW5034] Male >> 65 years and over >> Bachelor's degree
+                        Variable: [GW5041] Female >> 18 to 24 years >> Bachelor's degree
+                        Variable: [GW5048] Female >> 25 to 34 years >> Bachelor's degree
+                        Variable: [GW5055] Female >> 35 to 44 years >> Bachelor's degree
+                        Variable: [GW5062] Female >> 45 to 64 years >> Bachelor's degree
+                        Variable: [GW5069] Female >> 65 years and over >> Bachelor's degree
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Tracts & Larger Areas]
+                Source table: B15001. Sex by Age by Educational Attainment for the Population 18 Years and Over
+                    Universe: Population 18 years and over
+                        Variable: [Q8Z009] Male: 18 to 24 years: Bachelor's degree
+                        Variable: [Q8Z017] Male: 25 to 34 years: Bachelor's degree
+                        Variable: [Q8Z025] Male: 35 to 44 years: Bachelor's degree
+                        Variable: [Q8Z033] Male: 45 to 64 years: Bachelor's degree
+                        Variable: [Q8Z041] Male: 65 years and over: Bachelor's degree
+                        Variable: [Q8Z050] Female: 18 to 24 years: Bachelor's degree
+                        Variable: [Q8Z058] Female: 25 to 34 years: Bachelor's degree
+                        Variable: [Q8Z066] Female: 35 to 44 years: Bachelor's degree
+                        Variable: [Q8Z074] Female: 45 to 64 years: Bachelor's degree
+                        Variable: [Q8Z082] Female: 65 years and over: Bachelor's degree
+ 
+    Time series AC: Persons: 18 years and over ~ 5 or more years of college (in 1980) or graduate or professional degree (since 1990)
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT50. Years of School Completed
+                    Universe: Persons 18 Years and Over
+                        Variable: [DHS005] College: 5 or more years
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP60. Educational Attainment
+                    Universe: Persons 18 years and over
+                        Variable: [E37007] Graduate or professional degree
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NPCT025B. Population 18 Years and Over by Sex by Age Groups by Educational Attainment
+                    Universe: Persons 18 Years and Over
+                        Variable: [GW5007] Male >> 18 to 24 years >> Graduate or professional degree
+                        Variable: [GW5014] Male >> 25 to 34 years >> Graduate or professional degree
+                        Variable: [GW5021] Male >> 35 to 44 years >> Graduate or professional degree
+                        Variable: [GW5028] Male >> 45 to 64 years >> Graduate or professional degree
+                        Variable: [GW5035] Male >> 65 years and over >> Graduate or professional degree
+                        Variable: [GW5042] Female >> 18 to 24 years >> Graduate or professional degree
+                        Variable: [GW5049] Female >> 25 to 34 years >> Graduate or professional degree
+                        Variable: [GW5056] Female >> 35 to 44 years >> Graduate or professional degree
+                        Variable: [GW5063] Female >> 45 to 64 years >> Graduate or professional degree
+                        Variable: [GW5070] Female >> 65 years and over >> Graduate or professional degree
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Tracts & Larger Areas]
+                Source table: B15001. Sex by Age by Educational Attainment for the Population 18 Years and Over
+                    Universe: Population 18 years and over
+                        Variable: [Q8Z010] Male: 18 to 24 years: Graduate or professional degree
+                        Variable: [Q8Z018] Male: 25 to 34 years: Graduate or professional degree
+                        Variable: [Q8Z026] Male: 35 to 44 years: Graduate or professional degree
+                        Variable: [Q8Z034] Male: 45 to 64 years: Graduate or professional degree
+                        Variable: [Q8Z042] Male: 65 years and over: Graduate or professional degree
+                        Variable: [Q8Z051] Female: 18 to 24 years: Graduate or professional degree
+                        Variable: [Q8Z059] Female: 25 to 34 years: Graduate or professional degree
+                        Variable: [Q8Z067] Female: 35 to 44 years: Graduate or professional degree
+                        Variable: [Q8Z075] Female: 45 to 64 years: Graduate or professional degree
+                        Variable: [Q8Z083] Female: 65 years and over: Graduate or professional degree
+ 
+ 
+Table 4: (B79) Median Household Income in Previous Year
+ 
+    Time series AA: Median income in previous year: Households
+        Year: 1980
+            Source dataset: 1980 Census: STF 3 - Sample-Based Data
+                Source table: NT69. Median Household Income in 1979
+                    Universe: Households
+                        Variable: [DIE001] Median household income in 1979
+        Year: 1990
+            Source dataset: 1990 Census: STF 3 - Sample-Based Data
+                Source table: NP80A. Median Household Income in 1989
+                    Universe: Households
+                        Variable: [E4U001] Median household income in 1989
+        Year: 2000
+            Source dataset: 2000 Census: SF 3a - Sample-Based Data [Areas Larger Than Block Groups]
+                Source table: NP053A. Median Household Income in 1999
+                    Universe: Households
+                        Variable: [GMY001] Median income in 1999
+        Year: 2008-2012
+            Source dataset: 2012 American Community Survey: 5-Year Data [2008-2012, Block Groups & Larger Areas]
+                Source table: B19013. Median Household Income in the Past 12 Months (in 2012 Inflation-Adjusted Dollars)
+                    Universe: Households
+                        Variable: [QU1001] Median household income in the past 12 months (in 2012 inflation-adjusted dollars)
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 13.0 
+        [Database]. Minneapolis: University of Minnesota. 2018. 
+        http://doi.org/10.18128/D050.V13.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455

@@ -1,0 +1,12 @@
+Explaining the scores for the city's innovation
+
+1. Score1 => Inventor Citations
+2. Score2 => Inventor and Assignee Citations
+3. Score3 => Score 1 with classification spread
+4. Score4 => Score 2 with classification spread
+5. Score5 => Number of invented patents
+6. Score6 => Number of assigned patents
+7. Score7 => Total patents 
+
+
+*** Classification spread => Takes the difference between the top and bottom IPC classifications for a city
