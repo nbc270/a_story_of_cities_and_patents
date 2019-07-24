@@ -13,5 +13,5 @@ Runs logistic regression for each year to calculate AUC scores
 
 3) Create files for visual
     - a) Run Read_geojson.ipynb to Creates all relevant files for d3 map visualization
-    - b) Run the code this [gist]() to create an interactive visual that will allow you to compare two cities innovation producing features over time
+    - b) Run the code this [gist](https://gist.github.com/rohuniyer/d36f9823189e0183fd3a41ba79ffb0e3) to create an interactive visual that will allow you to compare two cities innovation producing features over time
     - c) Run the code this [gist](https://gist.github.com/tingyuc3/6f878fe46e588feab3e5d3796519e36a) to create an interactive visual that provides spatial context to this analysis
