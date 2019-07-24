@@ -1,6 +1,6 @@
 Below are the instructions to collect and process demographic data from the NHGIS reproducibly:
 
-1) Go to the NHGIS data website here[https://data2.nhgis.org/main] and create an account
+1) Go to the NHGIS data website [here](https://data2.nhgis.org/main) and create an account
     - a) Select 'Place' for geography
     - b) Select 1990, 2000, and 2008-2012 for years
     - c) Select total population, nativity, education attainment, and household income for topics
